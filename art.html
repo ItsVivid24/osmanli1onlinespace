@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Art Gallery</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .art-item img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            transition: transform 0.3s;
+        }
+        .art-item img:hover {
+            transform: scale(1.02);
+        }
+        .art-title {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- REPLACE THESE WITH YOUR ACTUAL IMAGES -->
+        <div class="art-item">
+            <img src="images/435363456.png" alt="Winters path" loading="lazy">
+            <div class="art-title">Winters path</div>
+        </div>
+        <div class="art-item">
+            <img src="images/436346646.png" alt="July night" loading="lazy">
+            <div class="art-title">July night</div>
+        </div>
+		<div class="art-item">
+            <img src="images/ethereal.png" alt="An ethereal state" loading="lazy">
+            <div class="art-title">An ethereal state</div>
+        </div>
+		<div class="art-item">
+            <img src="images/wintersnight.png" alt="A winters night" loading="lazy">
+            <div class="art-title">A winters night</div>
+        </div>
+		<div class="art-item">
+            <img src="images/discordbanner.png" alt="My Discord banner" loading="lazy">
+            <div class="art-title">My Discord banner</div>
+        </div>
+		<div class="art-item">
+            <img src="images/cirno24.png" alt="Cirno day 2024 drawing" loading="lazy">
+            <div class="art-title">Cirno day '24</div>
+        </div>
+    </div>
+</body>
+</html>
